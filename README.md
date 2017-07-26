@@ -3,7 +3,7 @@ hpack
 
 <p align="center">
   <img src="https://github.com/while-loop/hpack/blob/master/doc/box.png">
-  <br>
+  <br><br>
   <a href="https://godoc.org/github.com/while-loop/hpack"><img src="https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square"></a>
   <a href="https://travis-ci.org/while-loop/hpack"><img src="https://img.shields.io/travis/while-loop/hpack.svg?style=flat-square"></a>
   <a href="https://github.com/while-loop/hpack/releases"><img src="https://img.shields.io/github/release/while-loop/hpack.svg?style=flat-square"></a>
