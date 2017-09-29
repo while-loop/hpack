@@ -13,3 +13,28 @@
 // limitations under the License.
 
 package hpack
+
+import "fmt"
+
+type HeaderField struct {
+	name      string
+	value     string
+	sensitive bool
+}
+
+// http://httpwg.org/specs/rfc7541.html#calculating.table.size
+func (h *HeaderField) Size() uint {
+	return uint(len(h.name) + len(h.value) + 32)
+}
+
+func (h *HeaderField) String() string {
+	return fmt.Sprintf("sens: %v, name: %s, value: %s", h.sensitive, h.name, h.value)
+}
+
+type HeaderList []HeaderField
+
+type Decoder struct {
+}
+
+type Encoder struct {
+}
